@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="?attr/colorPrimary">
+
+    <TextView
+        android:id="@+id/nameofchampion"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:text="Champion"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?attr/textcolor"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/traits"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:textColor="?attr/textcolor"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Traits"/>
+
+    <ImageView
+        android:layout_below="@+id/nameofchampion"
+        android:id="@+id/championIcon"
+        android:layout_height="66dp"
+        android:layout_width="66dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/nameofAbility"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Ability"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/championIcon" />
+
+    <ImageView
+        android:layout_below="@+id/nameofAbility"
+        android:id="@+id/abilityIcon"
+        android:layout_height="66dp"
+        android:layout_width="66dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/mana"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Mana"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/championIcon"/>
+
+    <TextView
+        android:id="@+id/abilityDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ability Description"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/abilityIcon"
+        android:layout_below="@+id/nameofAbility"/>
+
+    <LinearLayout
+        android:id="@+id/rowone"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/nameofchampion"
+        android:layout_toRightOf="@+id/championIcon"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:id="@+id/Health"
+            android:gravity="left"
+            android:layout_weight="5"
+            android:text="Health"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/AttackDamage"
+            android:gravity="left"
+            android:layout_weight="4"
+            android:text="Attack Damage"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowtwo"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rowone"
+        android:layout_toRightOf="@+id/championIcon">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:gravity="left"
+            android:layout_weight="5"
+            android:id="@+id/Armor"
+            android:text="Armor"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="left"
+            android:layout_weight="4"
+            android:id="@+id/AttackSpeed"
+            android:text="Attack Speed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowthree"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rowtwo"
+        android:layout_toRightOf="@+id/championIcon">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:gravity="left"
+            android:layout_weight="5"
+            android:id="@+id/MagicResist"
+            android:text="Magic Resist"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="left"
+            android:layout_weight="4"
+            android:id="@+id/Range"
+            android:text="Range"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

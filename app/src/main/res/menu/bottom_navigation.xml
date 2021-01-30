@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_items"
+        android:icon="@drawable/items"
+        android:title="Items" />
+
+    <item
+        android:id="@+id/nav_combinations"
+        android:icon="@drawable/combinations"
+        android:title="Combinations" />
+
+    <item
+        android:id="@+id/nav_champions"
+        android:icon="@drawable/classes"
+        android:title="Champions" />
+
+    <item
+        android:id="@+id/nav_classes"
+        android:icon="@drawable/traits"
+        android:title="Traits" />
+
+    <item
+        android:id="@+id/nav_rates"
+        android:icon="@drawable/droprates"
+        android:title="Drop Rates" />
+
+</menu>

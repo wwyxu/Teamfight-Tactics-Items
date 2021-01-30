@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="?attr/backgroundcolor" >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?attr/backgroundcolor"/>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:columnCount="7"
+        android:rowCount="7"
+        android:background="?attr/backgroundcolor">
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="6"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            >
+
+            <ImageView
+                android:id="@+id/botrk"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/blade_of_the_ruined_king" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/bt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/bloodthirster" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/cblade"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/cursed_blade" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/dark"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/darkin" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/claw"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/dragons_claw" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/fon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/force_of_nature" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/deathblade"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/lords_edge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="6"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/frozen_heart" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/mallet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/frozen_mallet" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/ga"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/guardian_angel" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/guinsoos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/guinsoos_rageblade" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/gunblade"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/hextech_gunblade" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/hush"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/hush" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/giant_slayer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/giant_slayer" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="6"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/ie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/infinity_edge" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/ionic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/ionic_spark" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/knight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/knights_vow" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/locket"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/locket_of_the_iron_solari" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/ludens"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/ludens_echo" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/morello"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/morellonomicon" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/jeweled"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/arcane_gauntlet" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="6"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/pd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/phantom_dancer" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/deathcap"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/rabadons_deathcap" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/firecannon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/rapid_firecannon" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/redbuff"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/red_buff" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/redemption"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/redemption" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/runaans"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/runaans_hurricane" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/justice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/hand_of_justice" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="6"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/seraphs"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/seraphs_embrace" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/shojin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/spear_of_shojin" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/shiv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/statikk_shiv" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/swordbreak"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/sword_breaker" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/repeating"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/repeating_crossbow" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/thornmail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/thornmail" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/icebornegauntlet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/iceborn_gauntlet" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="6"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/titanic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/titanic_hydra" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/warmogs"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/warmogs_armor" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/youmuus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/youmuus_ghostblade" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/yuumi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/yuumi" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/zekes"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/zekes_herald" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/zephyr"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/zephyr" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/quicksilver"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/quicksilver" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="6"
+            android:orientation="horizontal"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/titanic_hydra" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/warmogs_armor" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/trap"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/backhand" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/mitten"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/mittens" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/thief"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:layout_column="4"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/thiefs_gloves" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:layout_column="5"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:src="@drawable/zephyr" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:layout_column="6"
+                android:layout_columnWeight="1"
+                android:layout_weight="1"
+                android:src="@drawable/quicksilver"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+    </GridLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/grid"
+        android:layout_height="7dp"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/line2"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/clistView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/clistView"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_below="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary" />
+
+</RelativeLayout>
